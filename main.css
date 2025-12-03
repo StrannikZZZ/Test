@@ -67,6 +67,7 @@ header nav ul li a {
   border-radius: 10px;
 }
 
+@media (hover: hover){
 header nav ul li a:hover {
   border: 0.3px solid white;
   border-radius: 10px;
@@ -75,6 +76,7 @@ header nav ul li a:hover {
     rgba(255, 255, 255, 0.411),
     rgba(140, 140, 140, 0.055)
   );
+}
 }
 
 .btn {
@@ -85,6 +87,7 @@ header nav ul li a:hover {
   padding: 10px;
 }
 
+@media (hover: hover){
 .btn:hover {
   border: 0.3px solid white;
   border-radius: 10px;
@@ -93,6 +96,7 @@ header nav ul li a:hover {
     rgba(255, 255, 255, 0.411),
     rgba(140, 140, 140, 0.055)
   );
+}
 }
 
 header .burger {
@@ -268,16 +272,6 @@ header .burger span {
     border-radius: 10px;
   }
 
-  header nav ul li a:hover {
-    border: 0.3px solid white;
-    border-radius: 10px;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.411),
-      rgba(140, 140, 140, 0.055)
-    );
-  }
-
   .btn {
     color: #fff;
     float: right;
@@ -286,15 +280,6 @@ header .burger span {
     padding: 10px;
   }
 
-  .btn:hover {
-    border: 0.3px solid white;
-    border-radius: 10px;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.411),
-      rgba(140, 140, 140, 0.055)
-    );
-  }
   .hero--info {
     width: 60%;
     padding: 0 50px;
@@ -345,16 +330,6 @@ header .burger span {
     border-radius: 10px;
   }
 
-  header nav ul li a:hover {
-    border: 0.3px solid white;
-    border-radius: 10px;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.411),
-      rgba(140, 140, 140, 0.055)
-    );
-  }
-
   .btn {
     color: #fff;
     float: right;
@@ -363,15 +338,6 @@ header .burger span {
     padding: 10px;
   }
 
-  .btn:hover {
-    border: 0.3px solid white;
-    border-radius: 10px;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.411),
-      rgba(140, 140, 140, 0.055)
-    );
-  }
   .hero--info {
     width: 100%;
     padding: 0px 20px;
@@ -441,16 +407,6 @@ header .burger span {
     border-radius: 10px;
   }
 
-  header nav ul li a:hover {
-    border: 0.3px solid white;
-    border-radius: 10px;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.411),
-      rgba(140, 140, 140, 0.055)
-    );
-  }
-
   .btn {
     color: #fff;
     float: right;
@@ -459,15 +415,6 @@ header .burger span {
     padding: 10px;
   }
 
-  .btn:hover {
-    border: 0.3px solid white;
-    border-radius: 10px;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.411),
-      rgba(140, 140, 140, 0.055)
-    );
-  }
   .hero--info {
     width: 100%;
     padding: 0px 20px;
