@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  background-color: #000;
+  background-image: url(img/Fon.png);
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 15px auto;
+}
+
+header {
+  background-color: #191919d2;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo {
+  text-transform: uppercase;
+  font-size: 29px;
+  font-weight: 800;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+header nav {
+  width: 40%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  position: relative;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header nav ul li a:hover {
+  border: 0.3px solid white;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.411),
+    rgba(140, 140, 140, 0.055)
+  );
+}
+
+.btn {
+  color: #fff;
+  float: right;
+  margin-right: 50px;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.btn:hover {
+  border: 0.3px solid white;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.411),
+    rgba(140, 140, 140, 0.055)
+  );
+}
+
+.NEWVISION {
+  padding-top: 20px;
+  padding-bottom: 150px;
+}
+
+.hero {
+  margin-bottom: 100px;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  border: 0.3px solid white;
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.336),
+    rgba(140, 140, 140, 0)
+  );
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.hero--info {
+  width: 55%;
+  padding: 20px 50px;
+}
+
+.hero--info h2 {
+  font-family: "Jacques Francois Shadow", serif;
+  font-size: 60px;
+  font-weight: 400;
+  position: absolute;
+  top: -50px;
+  text-shadow: 0 0 10px rgb(255, 0, 200), 0 0 20px rgb(255, 0, 200),
+    0 0 30px rgb(255, 0, 200);
+}
+
+.hero--info p {
+  width: 100%;
+  font-weight: 500;
+  line-height: 170%;
+  margin: 30px 0;
+}
+
+.hero img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  padding-right: 25px;
+}
+
+.footer {
+  background-color: #191919d2; /* Тёмный полупрозрачный фон (d2 = альфа‑канал ~80%) */
+  color: #ecf0f1; /* Цвет текста — светло‑серый */
+  padding: 20px 20px 20px; /* Внутренние отступы: сверху, слева и справа — 20px, снизу — 20px */
+}
+
+.footer-container {
+  display: grid; /* Включает CSS Grid для двумерного расположения элементов */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Создаёт колонки: минимум 200px, растягиваются на 1fr, если хватает места */
+  gap: 30px; /* Расстояние между ячейками сетки — 30px */
+  max-width: 1200px; /* Максимальная ширина контейнера — 1200px */
+  margin: 0 auto 40px; /* Внешние отступы: сверху 0, по бокам — авто (центрирует), снизу — 40px */
+}
+
+.footer-social {
+  text-align: center; /* Выравнивает содержимое по центру горизонтально */
+}
+
+.social-icon {
+  display: inline-block; /* Элемент ведёт себя как строчный, но допускает блочные свойства */
+  width: 32px; /* Фиксированная ширина — 32px */
+  height: 32px; /* Фиксированная высота — 32px */
+  text-align: center; /* Выравнивает текст/иконку по центру */
+  line-height: 32px; /* Высота строки равна высоте элемента — центрирует текст по вертикали */
+  border-radius: 50%; /* Скругление углов до круга (50%) */
+  margin-right: 10px; /* Внешний отступ справа — 10px */
+  padding-top: 2%; /* Внутренний отступ сверху — 2% от высоты родителя */
+}
+
+.btn-to-top {
+  display: block; /* Переводит кнопку в блочный элемент */
+  width: 140px; /* Фиксированная ширина кнопки — 140px */
+  padding: 10px; /* Внутренние отступы внутри кнопки — 10px со всех сторон */
+  margin: 0 auto; /* Внешние отступы: сверху/снизу 0, по бокам — auto (центрирует кнопку) */
+  background-color: #3498db; /* Синий фон кнопки */
+  color: white; /* Цвет текста — белый */
+  border: none; /* Убирает стандартную границу кнопки */
+  border-radius: 25px; /* Скругление углов кнопки на 25px */
+  cursor: pointer; /* Меняет курсор на «руку» при наведении — признак интерактивности */
+  font-size: 0.9em; /* Размер шрифта — 0.9 от базового размера */
+  transition: background-color 0.3s; /* Плавная смена цвета фона за 0.3 секунды */
+}
+
+.btn-to-top:hover {
+  background-color: #2980b9; /* Тёмно‑синий цвет фона при наведении */
+}
+
+.footer-bottom {
+  text-align: center; /* Выравнивает текст по центру горизонтально */
+  padding-top: 20px; /* Внутренний отступ сверху — 20px */
+  border-top: 1px solid #34495e; /* Верхняя граница: 1px, сплошная, тёмно‑серый цвет */
+  font-size: 0.8em; /* Размер шрифта — 80% от базового */
+  color: #bdc3c7; /* Цвет текста — светло‑серый */
+}
+
+@media (max-width: 1200px){
+  .hero--info {
+  width: 43%;
+  padding: 0 50px;
+}
+}
+
+@media (max-width: 1000px){
+header .logo {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 800;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+header nav {
+  width: 40%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  position: relative;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header nav ul li a:hover {
+  border: 0.3px solid white;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.411),
+    rgba(140, 140, 140, 0.055)
+  );
+}
+
+.btn {
+  color: #fff;
+  float: right;
+  margin-right: 50px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.btn:hover {
+  border: 0.3px solid white;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.411),
+    rgba(140, 140, 140, 0.055)
+  );
+}
+  .hero--info {
+  width: 60%;
+  padding: 0 50px;
+}
+.hero img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 250px;
+  padding-right: 20px; 
+}
+}
+
+@media (max-width: 900px){
+  .NEWVISION {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+header .logo {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 800;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+header nav {
+  width: 40%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  position: relative;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header nav ul li a:hover {
+  border: 0.3px solid white;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.411),
+    rgba(140, 140, 140, 0.055)
+  );
+}
+
+.btn {
+  color: #fff;
+  float: right;
+  margin-right: 50px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.btn:hover {
+  border: 0.3px solid white;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.411),
+    rgba(140, 140, 140, 0.055)
+  );
+}
+  .hero--info {
+    width: 100%;
+  padding: 0px 20px;
+}
+.hero--info h2 {
+  font-family: "Jacques Francois Shadow", serif;
+  font-size: 50px;
+  font-weight: 400;
+  position: absolute;
+  top: -40px;
+  text-shadow: 0 0 10px rgb(255, 0, 200), 0 0 20px rgb(255, 0, 200),
+    0 0 30px rgb(255, 0, 200);
+}
+
+.hero--info p {
+  width: 95%;
+  font-weight: 500;
+  line-height: 170%;
+  margin: 30px 0;
+}
+.hero img {
+  display: none;
+}
+.footer{
+  bottom: 0;
+}
+}
