@@ -498,11 +498,13 @@ header .burger span {
     display: none; /* Скрываем кнопки */
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Отступ от верха (под навигацией) */
+    top: 80px; /* Отступ от верха (под навигацией) */
+    border-radius: 10px;
     left: 0;
     right: 0;
     background: #191919d2;
     padding: 15px;
+    margin: 0 2%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
