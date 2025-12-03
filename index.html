@@ -20,11 +20,11 @@
             <span></span>
           </div>
           <div class="menu" id="menu">
-          <ul>
-            <li><a href="#">DESIGN</a></li>
-            <li><a href="#">VIDEO</a></li>
-            <li><a href="#">PHOTO</a></li>
-          </ul>
+            <ul>
+              <li><a href="#">DESIGN</a></li>
+              <li><a href="#">VIDEO</a></li>
+              <li><a href="#">PHOTO</a></li>
+            </ul>
           </div>
         </nav>
         <a href="#" class="btn">CONTACTS</a>
@@ -71,13 +71,13 @@
     </div>
 
     <script>
-      document.addEventListener(
-        "touchstart",
-        function () {
-          document.body.classList.add("touch-device");
-        },
-        { passive: true }
-      );
+      const burger = document.getElementById("burger");
+      const buttons = document.getElementById("menu");
+
+      burger.addEventListener("click", () => {
+        // Добавляем/убираем класс 'active' для показа списка
+        buttons.classList.toggle("active");
+      });
     </script>
   </body>
 </html>

@@ -501,7 +501,7 @@ header .burger span {
     top: 60px; /* Отступ от верха (под навигацией) */
     left: 0;
     right: 0;
-    background: #f8f9fa;
+    background: #191919d2;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
