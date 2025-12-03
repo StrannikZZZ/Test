@@ -204,173 +204,277 @@ header nav ul li a:hover {
   color: #bdc3c7; /* Цвет текста — светло‑серый */
 }
 
-@media (max-width: 1200px){
+.touch-device .button:hover {
+  background-color: initial;
+  transform: none;
+  /* или просто отменяем все стили наведения */
+  pointer-events: none; /* если нужно полностью отключить */
+}
+
+
+@media (max-width: 1200px) {
   .hero--info {
-  width: 43%;
-  padding: 0 50px;
-}
-}
-
-@media (max-width: 1000px){
-header .logo {
-  text-transform: uppercase;
-  font-size: 25px;
-  font-weight: 800;
-  padding: 20px;
-  margin-left: 50px;
+    width: 43%;
+    padding: 0 50px;
+  }
 }
 
-header nav {
-  width: 40%;
-}
+@media (max-width: 1000px) {
+  header .logo {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 20px;
+    margin-left: 50px;
+  }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  z-index: 2;
-  position: relative;
-}
+  header nav {
+    width: 40%;
+  }
 
-header nav ul li {
-  display: inline-block;
-}
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+  }
 
-header nav ul li a {
-  color: #fff;
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 10px;
-}
+  header nav ul li {
+    display: inline-block;
+  }
 
-header nav ul li a:hover {
-  border: 0.3px solid white;
-  border-radius: 10px;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.411),
-    rgba(140, 140, 140, 0.055)
-  );
-}
+  header nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+  }
 
-.btn {
-  color: #fff;
-  float: right;
-  margin-right: 50px;
-  font-size: 20px;
-  padding: 10px;
-}
+  header nav ul li a:hover {
+    border: 0.3px solid white;
+    border-radius: 10px;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.411),
+      rgba(140, 140, 140, 0.055)
+    );
+  }
 
-.btn:hover {
-  border: 0.3px solid white;
-  border-radius: 10px;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.411),
-    rgba(140, 140, 140, 0.055)
-  );
-}
+  .btn {
+    color: #fff;
+    float: right;
+    margin-right: 50px;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .btn:hover {
+    border: 0.3px solid white;
+    border-radius: 10px;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.411),
+      rgba(140, 140, 140, 0.055)
+    );
+  }
   .hero--info {
-  width: 60%;
-  padding: 0 50px;
-}
-.hero img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 250px;
-  padding-right: 20px; 
-}
+    width: 60%;
+    padding: 0 50px;
+  }
+  .hero img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    padding-right: 20px;
+  }
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
   .NEWVISION {
-  padding-top: 20px;
-  padding-bottom: 50px;
-}
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
 
-header .logo {
-  text-transform: uppercase;
-  font-size: 21px;
-  font-weight: 800;
-  padding: 20px;
-  margin-left: 50px;
-}
+  header .logo {
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 800;
+    padding: 20px;
+    margin-left: 50px;
+  }
 
-header nav {
-  width: 40%;
-}
+  header nav {
+    width: 40%;
+  }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  z-index: 2;
-  position: relative;
-}
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+  }
 
-header nav ul li {
-  display: inline-block;
-}
+  header nav ul li {
+    display: inline-block;
+  }
 
-header nav ul li a {
-  color: #fff;
-  font-size: 16px;
-  padding: 10px;
-  border-radius: 10px;
-}
+  header nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+  }
 
-header nav ul li a:hover {
-  border: 0.3px solid white;
-  border-radius: 10px;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.411),
-    rgba(140, 140, 140, 0.055)
-  );
-}
+  header nav ul li a:hover {
+    border: 0.3px solid white;
+    border-radius: 10px;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.411),
+      rgba(140, 140, 140, 0.055)
+    );
+  }
 
-.btn {
-  color: #fff;
-  float: right;
-  margin-right: 50px;
-  font-size: 16px;
-  padding: 10px;
-}
+  .btn {
+    color: #fff;
+    float: right;
+    margin-right: 50px;
+    font-size: 16px;
+    padding: 10px;
+  }
 
-.btn:hover {
-  border: 0.3px solid white;
-  border-radius: 10px;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.411),
-    rgba(140, 140, 140, 0.055)
-  );
-}
+  .btn:hover {
+    border: 0.3px solid white;
+    border-radius: 10px;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.411),
+      rgba(140, 140, 140, 0.055)
+    );
+  }
   .hero--info {
     width: 100%;
-  padding: 0px 20px;
-}
-.hero--info h2 {
-  font-family: "Jacques Francois Shadow", serif;
-  font-size: 50px;
-  font-weight: 400;
-  position: absolute;
-  top: -40px;
-  text-shadow: 0 0 10px rgb(255, 0, 200), 0 0 20px rgb(255, 0, 200),
-    0 0 30px rgb(255, 0, 200);
+    padding: 0px 20px;
+  }
+  .hero--info h2 {
+    font-family: "Jacques Francois Shadow", serif;
+    font-size: 50px;
+    font-weight: 400;
+    position: absolute;
+    top: -40px;
+    text-shadow: 0 0 10px rgb(255, 0, 200), 0 0 20px rgb(255, 0, 200),
+      0 0 30px rgb(255, 0, 200);
+  }
+
+  .hero--info p {
+    width: 95%;
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 0;
+  }
+  .hero img {
+    display: none;
+  }
+  .footer {
+    bottom: 0;
+  }
 }
 
-.hero--info p {
-  width: 95%;
-  font-weight: 500;
-  line-height: 170%;
-  margin: 30px 0;
-}
-.hero img {
-  display: none;
-}
-.footer{
-  bottom: 0;
-}
+@media (max-width: 400px) {
+  body {
+    padding: 0 2%;
+    font-size: 13px;
+  }
+    .NEWVISION {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  header .logo {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 20px;
+    margin-left: -5px;
+  }
+
+  header nav {
+    width: 40%;
+  }
+
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+  }
+
+  header nav ul li {
+    display: inline-block;
+  }
+
+  header nav ul li a {
+    color: #fff;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  header nav ul li a:hover {
+    border: 0.3px solid white;
+    border-radius: 10px;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.411),
+      rgba(140, 140, 140, 0.055)
+    );
+  }
+
+  .btn {
+    color: #fff;
+    float: right;
+    margin-right: 5px;
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .btn:hover {
+    border: 0.3px solid white;
+    border-radius: 10px;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.411),
+      rgba(140, 140, 140, 0.055)
+    );
+  }
+  .hero--info {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .hero--info h2 {
+    font-family: "Jacques Francois Shadow", serif;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    top: -25px;
+    text-shadow: 0 0 10px rgb(255, 0, 200), 0 0 20px rgb(255, 0, 200),
+      0 0 30px rgb(255, 0, 200);
+  }
+
+  .hero--info p {
+    width: 95%;
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 0;
+  }
+  .hero img {
+    display: none;
+  }
+  .footer {
+    bottom: 0;
+  }
 }
